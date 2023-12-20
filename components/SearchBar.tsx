@@ -1,10 +1,10 @@
 "use client";
-
+// Import necessary modules
 import { useState } from "react";
-import { SearchManufacturer } from ".";
+import SearchManufacturer from "./SearchManufacturer";
 
 const SearchBar = () => {
-  const [manufacturer, setManuFacturer] = useState("");
+  const [manufacturer, setManufacturer] = useState(""); // Corrected the state variable name
   const handleSearch = () => {};
 
   return (
@@ -12,7 +12,7 @@ const SearchBar = () => {
       <div className="searchbar__item">
         <SearchManufacturer
           manufacturer={manufacturer}
-          setManufacturer={setManuFacturer}
+          setManuFacturer={setManufacturer} // Corrected the prop name
         />
       </div>
     </form>
